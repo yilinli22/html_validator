@@ -40,7 +40,7 @@ def test__extract_tags_9():
 
 
 def test_validate_html_1():
-    assert HTML_Validator.validate_html('')
+    assert not HTML_Validator.validate_html('')
 
 def test_validate_html_2():
     assert HTML_Validator.validate_html('<a></a>')
