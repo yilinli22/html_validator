@@ -1,4 +1,5 @@
 # HTML Validation with Stacks
+
 ![https://github.com/yilinli22/html_validator/actions?query=workflow%3Atests](https://github.com/yilinli22/html_validator/workflows/tests/badge.svg)
 ![https://github.com/yilinli22/html_validator/actions?query=workflow%3Atests](https://github.com/yilinli22/html_validator/workflows/extra_credit/badge.svg)
 
