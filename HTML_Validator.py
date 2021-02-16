@@ -12,8 +12,11 @@ def validate_html(html):
     >>> validate_html('<strong>example')
     False
     '''
+    if len(html) == 0:
+        return True
     import re
-    tags = re.findall(r'<[^>]+>', html)
+    tags = _extract_tags(html)
+    # tags = re.findall(r'<[^>]+>', html)
     if tags == []:
         return False
     stack = []
@@ -59,4 +62,13 @@ def _extract_tags(html):
     '''
     import re
     tags = re.findall(r'<[^>]+>', html)
-    return tags
+    res = []
+    for ele in tags:
+        curr = ele.split()
+        if(len(curr) == 1):
+            res.append(curr[0])
+            continue
+        currTag = curr[0]+">"
+        res.append(currTag)
+    print(str(res))
+    return res
