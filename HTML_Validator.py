@@ -14,7 +14,6 @@ def validate_html(html):
     '''
     if len(html) == 0:
         return True
-    import re
     tags = _extract_tags(html)
     # tags = re.findall(r'<[^>]+>', html)
     if tags == []:
