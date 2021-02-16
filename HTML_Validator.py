@@ -67,7 +67,7 @@ def _extract_tags(html):
         if(len(curr) == 1):
             res.append(curr[0])
             continue
-        currTag = curr[0]+">"
-        res.append(currTag)
+        currtag = curr[0] + ">"
+        res.append(currtag)
     print(str(res))
     return res
